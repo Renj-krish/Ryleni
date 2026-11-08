@@ -1244,6 +1244,44 @@ body.inner-page .header .brand-logo-img {
    ABOUT PAGE STYLES (C2 Aesthetic & Architectural Layout)
    ========================================================================== */
 
+.page-back-nav {
+  margin-bottom: 1.8rem;
+}
+
+.page-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent-black);
+  text-decoration: none;
+  padding: 0.42rem 0.95rem 0.42rem 0.7rem;
+  border-radius: 9999px;
+  background: rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.page-back-link svg {
+  transition: transform 0.25s ease;
+}
+
+.page-back-link:hover {
+  background: #000000;
+  color: #ffffff;
+  border-color: #000000;
+  transform: translateX(-3px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
+.page-back-link:hover svg {
+  transform: translateX(-3px);
+}
+
 .breadcrumb-nav {
   display: flex;
   align-items: center;
