@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ryleni — We Build What's Next | Digital Innovation Studio</title>
+  <meta name="description" content="We transform ideas into powerful digital experiences through technology, creativity and intelligent engineering.">
+  
+  <!-- Modern Geometric & Techno Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800;900&family=Michroma&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="home-page">
+
+  <!-- Navigation -->
+  <header class="header">
+    <div class="nav-container">
+      <a href="#" class="brand-logo">
+        <img src="assets/images/ryleni_logo_transparent.png" alt="Ryleni" class="brand-logo-img">
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#about" class="nav-link">About Us</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+      </ul>
+
+      <a href="#contact" class="btn-black-pill">Contact Us</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="hero-inspo-card">
+      <!-- Background Media (The Guy & Laptop) -->
+      <div class="hero-bg-media">
+        <img src="assets/images/hero_guy_laptop.jpg" alt="Expert working on laptop with custom digital solutions" class="hero-guy-img">
+      </div>
+
+      <!-- Left Content -->
+      <div class="hero-inspo-content">
+        <h1 class="hero-inspo-title">
+          <span class="hero-typed-text"></span><span class="hero-type-cursor">|</span><span class="hero-dots" style="display:none">..<span class="hero-dot-blink">.</span></span>
+        </h1>
+
+        <p class="hero-inspo-desc hero-reveal">
+          From the first spark of an idea to the final click, we're here to make things happen. Explore how we turn everyday challenges into smarter digital experiences with technology that works for you. Your next big idea might just start here.
+        </p>
+
+        <div class="hero-inspo-actions hero-reveal">
+          <a href="https://wa.me/918714775551?text=Hello%20Ryleni%2C%20I%20would%20like%20to%20book%20a%20call." target="_blank" rel="noopener noreferrer" class="btn-hero-primary">
+            BOOK A CALL
+          </a>
+          <a href="#projects" class="btn-hero-secondary">
+            OUR WORK
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-media">
+          <img src="assets/images/about_hallway.jpg" alt="Modern architectural hallway corridor">
+        </div>
+        <div class="about-content">
+          <span class="section-tag">— ABOUT US</span>
+          <h2>TECHNOLOGY WITH<br>A PURPOSE.<br>INNOVATION<br>WITHOUT LIMITS.</h2>
+          <p>
+            We are Ryleni, a digital technology company building meaningful solutions that help businesses evolve, connect and grow.
+          </p>
+          <a href="about.html" class="btn-black-pill">
+            Learn More &rarr;
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services-section">
+    <div class="container">
+      <div class="services-header">
+        <div>
+          <span class="section-tag">— WHAT WE OFFER —</span>
+          <h2 class="section-headline">EXPLORE OUR<br>SERVICES</h2>
+        </div>
+
+        <div class="filter-pills">
+          <button class="filter-btn active" data-filter="all">All Services</button>
+          <button class="filter-btn" data-filter="development">Development</button>
+          <button class="filter-btn" data-filter="design">Design</button>
+        </div>
+      </div>
+
+      <!-- Services Carousel (Shows 4 cards at a time, slides to reveal AI & Neural Intelligence) -->
+      <div class="services-carousel-wrapper">
+        <!-- Left Arrow Button -->
+        <button class="services-nav-btn services-nav-prev" id="servicesPrevBtn" aria-label="Previous service" style="display: none; opacity: 0;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m15 18-6-6 6-6"/>
+          </svg>
+        </button>
+
+        <!-- Viewport -->
+        <div class="services-carousel-viewport">
+          <div class="services-carousel-track" id="servicesTrack">
+            <!-- 1. Mobile App -->
+            <div class="service-card" data-category="development">
+              <div class="service-thumb">
+                <img src="assets/images/mobile_mockup.jpg" alt="Mobile App Development">
+              </div>
+              <h3>Mobile App Development</h3>
+              <p>Build powerful and scalable mobile apps.</p>
+              <a href="service-mobile-app.html" class="card-link">Learn More &rarr;</a>
+            </div>
+
+            <!-- 2. Web Development -->
+            <div class="service-card" data-category="development">
+              <div class="service-thumb">
+                <img src="assets/images/laptop_code.jpg" alt="Web Development">
+              </div>
+              <h3>Web Development</h3>
+              <p>Modern and responsive web solutions.</p>
+              <a href="service-web-development.html" class="card-link">Learn More &rarr;</a>
+            </div>
+
+            <!-- 3. Custom Software -->
+            <div class="service-card" data-category="development">
+              <div class="service-thumb">
+                <img src="assets/images/software_boxes.jpg" alt="Custom Software Development">
+              </div>
+              <h3>Custom Software Development</h3>
+              <p>Tailored software for your business needs.</p>
+              <a href="service-custom-software.html" class="card-link">Learn More &rarr;</a>
+            </div>
+
+            <!-- 4. UI/UX Design -->
+            <div class="service-card" data-category="design">
+              <div class="service-thumb">
+                <img src="assets/images/ui_cards.jpg" alt="UI/UX Design">
+              </div>
+              <h3>UI/UX Design</h3>
+              <p>Intuitive and impactful design experiences.</p>
+              <a href="service-ui-ux-design.html" class="card-link">Learn More &rarr;</a>
+            </div>
+
+            <!-- 5. AI & Neural Intelligence -->
+            <div class="service-card" data-category="development">
+              <div class="service-thumb">
+                <img src="assets/images/brain_tech.jpg" alt="AI &amp; Neural Intelligence">
+              </div>
+              <h3>AI &amp; Neural Intelligence</h3>
+              <p>Smarter solutions for a more intelligent tomorrow.</p>
+              <a href="service-ai-solutions.html" class="card-link">Learn More &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Arrow Button -->
+        <button class="services-nav-btn services-nav-next" id="servicesNextBtn" aria-label="Next service">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m9 18 6-6-6-6"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Expertise Section -->
+  <section class="expertise-section">
+    <div class="container">
+      <span class="section-tag">— OUR EXPERTISE</span>
+
+      <div class="expertise-list">
+        <!-- 01 -->
+        <a href="service-web-development.html#expertise" class="expertise-item">
+          <div class="exp-num">01</div>
+          <div class="exp-title">Web Development</div>
+          <div class="exp-desc">Modern, scalable and high-performance web solutions.</div>
+          <div class="exp-arrow">&rarr;</div>
+        </a>
+
+        <!-- 02 -->
+        <a href="service-mobile-app.html#expertise" class="expertise-item">
+          <div class="exp-num">02</div>
+          <div class="exp-title">Mobile App Development</div>
+          <div class="exp-desc">Native and cross-platform mobile applications.</div>
+          <div class="exp-arrow">&rarr;</div>
+        </a>
+
+        <!-- 03 -->
+        <a href="service-custom-software.html#expertise" class="expertise-item">
+          <div class="exp-num">03</div>
+          <div class="exp-title">Custom Enterprise Software</div>
+          <div class="exp-desc">Robust and scalable software for enterprises.</div>
+          <div class="exp-arrow">&rarr;</div>
+        </a>
+
+        <!-- 04 -->
+        <a href="service-ui-ux-design.html#expertise" class="expertise-item">
+          <div class="exp-num">04</div>
+          <div class="exp-title">UI/UX Design Systems</div>
+          <div class="exp-desc">Designs that inspire and engage users seamlessly.</div>
+          <div class="exp-arrow">&rarr;</div>
+        </a>
+
+        <!-- 05 -->
+        <a href="service-ai-solutions.html#expertise" class="expertise-item">
+          <div class="exp-num">05</div>
+          <div class="exp-title">AI & Neural Intelligence</div>
+          <div class="exp-desc">Integrating AI for smarter automated business solutions.</div>
+          <div class="exp-arrow">&rarr;</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects Section -->
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+        <span class="section-tag" style="margin: 0;">— PORTFOLIO</span>
+        <a href="#projects" class="card-link" style="font-size: 0.85rem;">View All Projects &rarr;</a>
+      </div>
+
+      <div class="projects-layout">
+        <div class="projects-intro">
+          <h2>FEATURED<br>PROJECTS</h2>
+          <p>A glimpse of our work — crafted with innovation, built for impact.</p>
+          <a href="#contact" class="btn-black-pill" style="padding: 0.55rem 1.4rem; font-size: 0.82rem;">
+            Explore More &rarr;
+          </a>
+        </div>
+
+        <div class="projects-cards-row">
+          <!-- Project 1 -->
+          <div class="project-card">
+            <div class="project-media">
+              <img src="assets/images/laptop_code.jpg" alt="DynaTech Dashboard">
+            </div>
+            <div class="project-info">
+              <h3 class="project-name">DynaTech Dashboard</h3>
+              <div class="project-type">Analytics Platform</div>
+              <div class="project-badge">Web &bull; UI/UX</div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card">
+            <div class="project-media">
+              <img src="assets/images/mobile_mockup.jpg" alt="Aura Mobile App">
+            </div>
+            <div class="project-info">
+              <h3 class="project-name">Aura Mobile App</h3>
+              <div class="project-type">Lifestyle App</div>
+              <div class="project-badge">Mobile &bull; UI/UX</div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card">
+            <div class="project-media">
+              <img src="assets/images/team_minimal.jpg" alt="Zenith E-Commerce">
+            </div>
+            <div class="project-info">
+              <h3 class="project-name">Zenith E-Commerce</h3>
+              <div class="project-type">E-commerce Platform</div>
+              <div class="project-badge">Web &bull; UI/UX</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <div class="container">
+      <div class="faq-layout">
+        <div class="faq-intro">
+          <span class="section-tag">— QUERIES</span>
+          <h2>FREQUENTLY<br>ASKED<br>QUESTIONS</h2>
+          <p>Find answers to common questions about our services and process.</p>
+          <a href="#faq" class="card-link">View All FAQs &rarr;</a>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>Do you offer post-launch support?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-body">
+              <p>Yes, we provide ongoing maintenance, continuous optimization, security monitoring, and regular feature updates to ensure your digital products perform at their peak.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>What technologies do you use?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-body">
+              <p>We work with modern stacks including React, Next.js, Node.js, Python, Swift, Kotlin, and leading cloud providers (AWS, Google Cloud) paired with enterprise-grade architecture.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>How long does a project take?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-body">
+              <p>Timelines vary based on scope and requirements. Standard MVP rollouts typically take 6–10 weeks, while full enterprise bespoke solutions usually span 3–6 months.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>Can you work with our existing team?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-body">
+              <p>Absolutely. We seamlessly integrate with in-house design and engineering teams, augmenting capabilities or providing specialized domain acceleration.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Get in Touch / Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="contact-layout">
+        <div>
+          <span class="section-tag">— GET IN TOUCH</span>
+          <h2 class="contact-headline">CONTACT US</h2>
+          <p class="contact-intro">Let's discuss your ideas and turn them into reality.</p>
+          <a href="mailto:hello@ryleni.com" class="btn-black-pill">
+            Contact Us &rarr;
+          </a>
+        </div>
+
+        <div class="contact-meta-grid">
+          <div class="meta-block">
+            <h4>Our Office</h4>
+            <p>Kochi, Kerala<br>682001, India</p>
+          </div>
+
+          <div class="meta-block">
+            <h4>Get in Touch</h4>
+            <p><a href="mailto:hello@ryleni.com">hello@ryleni.com</a></p>
+            <p><a href="tel:+919876543210">+91 98765 43210</a></p>
+          </div>
+
+          <div class="meta-block">
+            <h4>Follow Us</h4>
+            <div class="social-icons-row">
+              <a href="#" aria-label="LinkedIn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.78a1.62 1.62 0 1 0 0 3.24 1.62 1.62 0 0 0 0-3.24Z"/>
+                </svg>
+              </a>
+              <a href="#" aria-label="X (Twitter)">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+              </a>
+              <a href="#" aria-label="Instagram">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+                </svg>
+              </a>
+              <a href="#" aria-label="YouTube">
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <a href="https://ryleni.com" target="_blank" rel="noopener noreferrer" class="brand-logo" aria-label="Ryleni">
+        <img src="assets/images/ryleni_logo_transparent.png" alt="Ryleni" class="footer-logo-img">
+      </a>
+
+      <div class="footer-copyright">
+        &copy; 2025 Ryleni. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

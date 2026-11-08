@@ -1,0 +1,13 @@
+{
+  "name": "ryleni",
+  "version": "1.0.0",
+  "description": "Ryleni — Digital Innovation Studio Website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
